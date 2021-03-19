@@ -1,8 +1,15 @@
-import React from 'react';
+import React from "react"
 
 //styles
-import './Footer.scss';
+import "./Footer.scss"
+import { Icon } from "../../components/shared/Icon/Icon"
 
 export const Footer = () => {
-  return <div className="Footer"></div>;
-};
+  return (
+    <div className="Footer">
+      <Icon className="Footer__logo" icon="logo-black" />
+      <Icon className="Footer__logokutia" icon="Group 2" />
+      <p className="Footer__kutia">DESIGNED BY KUTIA</p>
+    </div>
+  )
+}

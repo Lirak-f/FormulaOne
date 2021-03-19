@@ -1,3 +1,24 @@
+@import url(//db.onlinewebfonts.com/c/6a9c6944fe8451dd397fe9d0763a4c88?family=OCR+A+Std);
+
 .Footer {
+  margin: 0 0 0 307px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
   width: 100%;
+  height: 159px;
+  background-image: linear-gradient(rgba(0,0,0,0), #000000 700%);
+  &__logo {
+    width: 58.5px;
+    height: 14.62px;
+    margin: 96px  0 0 109px;
+  }
+  &__logokutia{
+    margin: -15px 0 0 1059px;
+  }
+  &__kutia {
+    margin: -18px 0 0 1105px ;
+    font-family: "OCR A Std";
+    font-size: 10px;
+  }
 }

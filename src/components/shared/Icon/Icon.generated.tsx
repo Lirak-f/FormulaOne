@@ -12,10 +12,13 @@ import React from 'react';
 /**
  * A list of all available icons in the icon set.
  */
-export type IconDefinition = 'logo';
+export type IconDefinition = 'arrow' | 'Group 2' | 'logo-black' | 'logo';
 
-export const availableIcons: IconDefinition[] = ['logo'];
+export const availableIcons: IconDefinition[] = ['arrow', 'Group 2', 'logo-black', 'logo'];
 
 export const IconSvg = {
+  'arrow': <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.822 17.822"><path fill="#e6101a" d="M8.91 0A8.911 8.911 0 110 8.91 8.909 8.909 0 018.91 0zM4.742 10.491H8.91v2.546a.431.431 0 00.737.305l4.107-4.128a.427.427 0 000-.607L9.647 4.476a.431.431 0 00-.737.305v2.548H4.742a.432.432 0 00-.431.431v2.3a.432.432 0 00.431.431z" data-name="Icon awesome-arrow-alt-circle-right"/></svg>,
+  'Group 2': <svg xmlns="http://www.w3.org/2000/svg" data-name="Group 2" viewBox="0 0 19.564 22.348"><path d="M12.753 13.045l6.014-3.514-.045-3.231-8.791 5.206z" data-name="Path 1"/><path d="M18.48 5.88l-2.843-1.569-6.083 3.675v3.177z" data-name="Path 2"/><path d="M9.069 11.037v-9.46L6.354 0v9.557z" data-name="Path 3"/><path d="M5.868.09L3.144 1.672v6.135l2.724 1.485z" data-name="Path 4"/><path d="M3.144 15.509v4.88l2.724 1.638v-5.033z" data-name="Path 5"/><path d="M6.354 17.262v4.861l2.714-1.632.165-.1v-1.557l-.165-.09z" data-name="Path 6"/><path d="M19.481 17.266L2.873 8.212.247 9.761 19.563 20.31z" data-name="Path 7"/><path d="M0 10.177v3.06l16.68 9.11 2.655-1.61z" data-name="Path 8"/></svg>,
+  'logo-black': <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58.5 14.616"><g data-name="Group 10"><path d="M0 14.571h8.272l7.319-6.973a6.4 6.4 0 014.524-2.011h22.5l5.63-5.566H20.196s-4.837-.2-7.754 2.457S0 14.571 0 14.571z" data-name="Path 10"/><path d="M9.76 14.571h7.656l2.132-2.1a4.093 4.093 0 012.649-1.042h14.49l5.12-5.1H21.202a6.938 6.938 0 00-4.393 1.392c-1.653 1.504-7.049 6.85-7.049 6.85z" data-name="Path 11"/><path d="M43.979 14.559H34.92L49.441 0H58.5z" data-name="Path 12"/><g data-name="Group 8"><path d="M48.263 14.616v-1.47h-.55v-.3h1.472v.3h-.548v1.47z" data-name="Path 13"/><path d="M49.421 14.616v-1.769h.56l.336 1.207.332-1.207h.561v1.769h-.348v-1.393l-.368 1.393h-.36l-.366-1.393v1.393z" data-name="Path 14"/></g></g></svg>,
   'logo': <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 105.77 26.426"><g fill="#e6101a" data-name="Group 9"><path d="M0 26.344h14.955l13.233-12.607a11.562 11.562 0 018.188-3.646h40.67L87.225.028h-50.71S27.77-.342 22.496 4.47 0 26.344 0 26.344z" data-name="Path 10"/><path d="M17.646 26.345h13.845l3.855-3.8a7.4 7.4 0 014.79-1.883h26.2l9.257-9.227h-37.26s-4.954-.21-7.942 2.516-12.745 12.394-12.745 12.394z" data-name="Path 11"/><path d="M79.516 26.322H63.137L89.392 0h16.374z" data-name="Path 12"/><g data-name="Group 8"><path d="M87.262 26.426v-2.658h-.994v-.541h2.66v.541h-.992v2.658z" data-name="Path 13"/><path d="M89.357 26.426v-3.2h1.012l.608 2.182.6-2.182h1.015v3.2h-.628v-2.518l-.665 2.518h-.651l-.663-2.518v2.518z" data-name="Path 14"/></g></g></svg>,
 };
