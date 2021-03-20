@@ -4,6 +4,11 @@
   height: 100vh;
   margin: 0;
   display: flex;
+  background-color: #EDF0F2;
   position: relative;
-  justify-content: center;
+  //justify-content: center;
+  &__content{
+    display: flex;
+    flex-direction: column;
+  }
 }

@@ -19,8 +19,10 @@ function App() {
         <UIContextProvider>
           <ConfirmationContextProvider>
             <SideBar />
-            <Routes />
-            <Footer />
+            <div className="App__content">
+              <Routes />
+              <Footer />
+            </div>
           </ConfirmationContextProvider>
         </UIContextProvider>
       </AuthContextProvider>

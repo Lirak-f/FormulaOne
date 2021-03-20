@@ -2,23 +2,24 @@
 
 .Footer {
   margin: 0 0 0 307px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+  position: relative;
+  display: flex;
   height: 159px;
-  background-image: linear-gradient(rgba(0,0,0,0), #000000 700%);
+  background-image: linear-gradient(rgba(0,0,0,0) 35%, #000000 230%);
+  background-color: #EDF0F2;
   &__logo {
     width: 58.5px;
     height: 14.62px;
     margin: 96px  0 0 109px;
   }
   &__logokutia{
-    margin: -15px 0 0 1059px;
+    margin: 95.8px 0 0 585.5px;
   }
   &__kutia {
-    margin: -18px 0 0 1105px ;
+
+    margin: 101px 0 0 26px ;
     font-family: "OCR A Std";
     font-size: 10px;
   }
+
 }
