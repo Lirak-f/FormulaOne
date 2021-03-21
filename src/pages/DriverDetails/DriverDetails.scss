@@ -2,4 +2,63 @@
   width:  calc(100vw - 307px);
   margin-left: 307px;
   height: 100vh;
+  &__backbutton {
+    margin: 33px 0 0 109px;
+  }
+  &__championtitle{
+    float: left;
+    &__year{
+      margin: 59px 0 0 109px;
+      font-weight: bold;
+      font-size: 14px;
+      letter-spacing: 2.1px;
+    }
+    &__title{
+      margin-left: 109px;
+      margin-bottom: 0;
+      font-size: 20px;
+      font-weight: bold;
+      color: #E6101A;
+    }
+    &__driverphoto{
+      margin: 22px 0 0 109px;
+    }
+    &__information{
+      display: flex;
+      flex-direction: row;
+      margin:17px 0 0 99px;
+      align-items: center;
+      &__number{
+        font-size: 20px;
+        color: #C2C8CB;
+        margin: 0;
+      }
+      &__name{
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0 10px 0 10px;
+      }
+    }
+    &__helmet {
+      margin: 17px 0 0 157px;
+    }
+  }
+  &__information{
+    float: right;
+    margin: 59px 138.5px 0 0;
+    table {
+      border-collapse: collapse;
+      width: 536px;
+    }
+
+    th, td {
+      padding: 8px;
+      font-size: 20px;
+      text-align: left;
+      border-bottom: 1px solid #C2C8CB;
+    }
+    td {
+      font-weight: bold;
+    }
+  }
 }
