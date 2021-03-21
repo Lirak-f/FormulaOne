@@ -46,6 +46,24 @@ export const SeasonResults = () => {
               <Button className="SeasonResults__button" />
             </td>
           </tr>
+          <tr>
+            <td>Lewis Hamilton</td>
+            <td>British</td>
+            <td>Mercedes</td>
+            <td>205</td>
+            <td>
+              <Button className="SeasonResults__button" />
+            </td>
+          </tr>
+          <tr>
+            <td>Lewis Hamilton</td>
+            <td>British</td>
+            <td>Mercedes</td>
+            <td>205</td>
+            <td>
+              <Button className="SeasonResults__button" />
+            </td>
+          </tr>
         </tbody>
       </table>
     </div>

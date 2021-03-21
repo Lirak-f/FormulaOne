@@ -2,11 +2,11 @@
   margin: 101px 108px 0 78px;
   //position: absolute;
   position: relative;
+  display: flex;
   height: 214px;
   background-color: #ffffff;
   opacity: 75%;
   border-radius: 26px;
-  display: flex;
   flex-direction: column;
 
   &__year {

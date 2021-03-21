@@ -26,7 +26,7 @@ export const DriverDetails = () => {
             44
           </p>
           <p className="DriverDetails__championtitle__information__name">
-            LewisHamilton
+            Lewis Hamilton
           </p>
           <img
             className="DriverDetails__championtitle__information__city"
@@ -40,7 +40,7 @@ export const DriverDetails = () => {
           alt="helmet"
         />
       </div>
-      <div className="DriverDetails__information">
+      <div className="DriverDetails__informationtable">
         <table>
           <tr>
             <th>Team</th>
