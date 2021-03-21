@@ -13,6 +13,7 @@ import { Home } from "../pages/Home/Home"
 import { Page404 } from "../pages/Page404/Page404"
 import { RestrictedRoute } from "./RestrictedRoute"
 import { SeasonInformation } from "../pages/SeasonInformation/SeasonInformation"
+import { DriverDetails } from "../pages/DriverDetails/DriverDetails"
 
 export enum RouteType {
   PUBLIC,
@@ -60,6 +61,18 @@ export const AppRoutes: AppRoute[] = [
     exact: true,
     path: "/",
     component: SeasonInformation
+  },
+  {
+    type: RouteType.PUBLIC,
+    exact: true,
+    path: "/",
+    component: SeasonInformation
+  },
+  {
+    type: RouteType.PUBLIC,
+    exact: true,
+    path: "drivers/:id",
+    component: DriverDetails
   }
 ]
 

@@ -1,5 +1,5 @@
 import React from "react"
-
+import { Link } from "react-router-dom"
 //components
 import { Button } from "../shared/Button/Button"
 //styles
@@ -24,7 +24,9 @@ export const ChampionInformation = () => {
           <td>205</td>
         </tr>
       </table>
-      <Button className="ChampionInformation__button" />
+      <Link to="/drivers/alonso">
+        <Button className="ChampionInformation__button" />
+      </Link>
     </div>
   )
 }
