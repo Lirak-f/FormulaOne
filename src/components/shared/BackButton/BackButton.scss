@@ -1,0 +1,37 @@
+.BackButton {
+  background-color: white;
+  width: 108px;
+  height: 44px;
+  border: 1px solid #C2C8CB;
+  border-radius: 26px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  //top:126px;
+  //left: 735px;
+  //margin-left: 310px;
+
+  &__back {
+    color: #E6101A;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin-left: 52px;
+    //margin: 15px 0 14px 0;
+
+  }
+  &__icon {
+    width: 17.82px !important;
+    height: 17.82px !important;
+    transform: scaleX(-1);
+    margin-left: 29px;
+    position: absolute;
+    //margin: 13.5px 0 12.7px 29px;
+  }
+
+}

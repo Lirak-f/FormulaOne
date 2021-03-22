@@ -1,0 +1,65 @@
+
+.SideBar {
+  height: 100vh;
+  width: 307px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+
+  &__logo {
+    width: 106px !important;
+    height: 26px !important;
+
+    margin-top: 39px;
+    margin-left: 81px;
+  }
+  &__f1championships {
+    width: 104px;
+    height: 12px;
+    margin-left: 81px;
+    margin-top: 5.8px;
+    font-size: 9px;
+    letter-spacing: 1.35px;
+  }
+  &__years {
+    width: 53px;
+    height:20px;
+    margin-top:53px;
+    margin-left:134px;
+    color: #C2C8CB;
+    font-weight: 700;
+    letter-spacing: 2.1px;
+    margin-bottom: 22px;
+  }
+  &__list{
+    &_item{
+      width: 41px;
+      height: 20px;
+      margin-bottom:27px;
+      margin-left: 142px;
+      font-weight: 700;
+      letter-spacing: 2.1px;
+      color:#242424;
+    }
+  }
+  &__arrow{
+    width: 208.14px;
+    height: 49px;
+    background: #E6101A;
+    position: relative;
+  }
+  &__arrow:before{
+    content:'';
+    width: 0;
+    height: 0;
+    border-top: 25px solid white;
+    border-left: 8px solid #E6101A;
+    border-bottom: 25px solid white;
+    display: block;
+    margin-left: 208.14px;
+    background: #E6101A;
+    position: absolute;
+  }
+}

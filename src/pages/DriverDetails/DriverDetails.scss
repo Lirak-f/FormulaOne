@@ -1,0 +1,87 @@
+.DriverDetails {
+  //margin-left: 307px;
+  width:  calc(100vw - 307px);
+  height: calc(100vh - 192px);
+  &__backbutton {
+    margin: 33px 0 0 109px;
+  }
+  &__championtitle{
+    float: left;
+    margin-top: 59px;
+    margin-left: 109px;
+    margin-right: 55px;
+    &__year{
+      //margin: 59px 0 0 109px;
+      font-weight: bold;
+      font-size: 14px;
+      letter-spacing: 2.1px;
+      margin-bottom: 0px;
+    }
+    &__title{
+      //margin-left: 109px;
+      margin-bottom: 0;
+      font-size: 20px;
+      font-weight: bold;
+      color: #E6101A;
+    }
+    &__driverphoto{
+      //margin: 22px 0 0 109px;
+      margin-top: 22px;
+    }
+    &__information{
+      display: flex;
+      flex-direction: row;
+      margin-top: 17px;
+      margin-bottom: 0px;
+      align-items: center;
+      &__number{
+        font-size: 20px;
+        color: #C2C8CB;
+        margin: 0;
+      }
+      &__name{
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0 10px 0 10px;
+      }
+    }
+    &__helmet {
+     margin-top: 17px;
+      margin-left: 48px;
+    }
+  }
+  &__informationtable{
+    margin-top: 59px;
+    //float: right;
+    height: 489px;
+    //padding-left: 55px;
+    //width: 536px;
+    //margin-right: 138.5px;
+    table {
+      //margin-left: 385px;
+      border-collapse: collapse;
+      //width: 536px;
+    }
+    th {
+      padding-right: 54px !important;
+    }
+    td{
+      padding-right: 56px !important;
+    }
+    th, td {
+      padding: 10px 0 10px;
+      font-size: 20px;
+      text-align: left;
+      border-bottom: 1px solid #C2C8CB;
+
+    }
+    tr:nth-child(1){
+      th,td{
+        padding-top: 0;
+      }
+    }
+    td {
+      font-weight: bold;
+    }
+  }
+}

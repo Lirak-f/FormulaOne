@@ -1,14 +1,14 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React from "react"
 
 //styles
-import './Home.scss';
+import "./Home.scss"
+//components
+import { SeasonInformation } from "../SeasonInformation/SeasonInformation"
 
 export const Home = () => {
   return (
     <div className="Home">
-      <h1>Home component</h1>
-      <NavLink to="/login"> Go to Login</NavLink>
+      <SeasonInformation />
     </div>
-  );
-};
+  )
+}
