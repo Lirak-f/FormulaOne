@@ -1,5 +1,5 @@
 .DriverDetails {
-  margin-left: 307px;
+  //margin-left: 307px;
   width:  calc(100vw - 307px);
   height: calc(100vh - 192px);
   &__backbutton {
@@ -9,7 +9,7 @@
     float: left;
     margin-top: 59px;
     margin-left: 109px;
-
+    margin-right: 55px;
     &__year{
       //margin: 59px 0 0 109px;
       font-weight: bold;
@@ -52,18 +52,28 @@
   }
   &__informationtable{
     margin-top: 59px;
+    //float: right;
     height: 489px;
+    //padding-left: 55px;
+    //width: 536px;
+    //margin-right: 138.5px;
     table {
-      margin-left: 385px;
+      //margin-left: 385px;
       border-collapse: collapse;
-      width: 536px;
+      //width: 536px;
     }
-
+    th {
+      padding-right: 54px !important;
+    }
+    td{
+      padding-right: 56px !important;
+    }
     th, td {
       padding: 10px 0 10px;
       font-size: 20px;
       text-align: left;
       border-bottom: 1px solid #C2C8CB;
+
     }
     tr:nth-child(1){
       th,td{
