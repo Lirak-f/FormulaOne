@@ -1,62 +1,86 @@
 .DriverDetails {
   //margin-left: 307px;
-  width:  calc(100vw - 307px);
-  height: calc(100vh - 192px);
+  width: calc(100vw - 307px);
+  ////height: calc(100vh - 192px);
+  //background-color: #EDF0F2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  overflow-y: auto;
+  &__content {
+    margin-top: 59px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    //margin-right: 138px;
+  }
   &__backbutton {
     margin: 33px 0 0 109px;
   }
-  &__championtitle{
-    float: left;
-    margin-top: 59px;
-    margin-left: 109px;
-    margin-right: 55px;
-    &__year{
-      //margin: 59px 0 0 109px;
-      font-weight: bold;
-      font-size: 14px;
-      letter-spacing: 2.1px;
-      margin-bottom: 0px;
-    }
-    &__title{
-      //margin-left: 109px;
-      margin-bottom: 0;
-      font-size: 20px;
-      font-weight: bold;
-      color: #E6101A;
-    }
-    &__driverphoto{
-      //margin: 22px 0 0 109px;
-      margin-top: 22px;
-    }
-    &__information{
-      display: flex;
-      flex-direction: row;
-      margin-top: 17px;
-      margin-bottom: 0px;
-      align-items: center;
-      &__number{
-        font-size: 20px;
-        color: #C2C8CB;
-        margin: 0;
-      }
-      &__name{
-        font-size: 20px;
-        font-weight: bold;
-        margin: 0 10px 0 10px;
-      }
-    }
-    &__helmet {
-     margin-top: 17px;
-      margin-left: 48px;
-    }
+
+  &__championtitle {
+    //float: left;
+    //margin-top: 59px;
+    //margin-left: 109px;
+    //margin-right: 55px;
   }
+
+  &_year {
+    //margin: 59px 0 0 109px;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 2.1px;
+    margin-bottom: 0;
+  }
+
+  &_title {
+    //margin-left: 109px;
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #E6101A;
+  }
+
+  &_driverphoto {
+    //margin: 22px 0 0 109px;
+    margin-top: 22px;
+  }
+
+  &__information {
+    display: flex;
+    flex-direction: row;
+    margin-top: 17px;
+    margin-bottom: 0px;
+    align-items: center;
+  }
+
+  &_number {
+    font-size: 20px;
+    color: #C2C8CB;
+    margin: 0;
+  }
+
+  &_name {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 10px 0 10px;
+  }
+
+  &_helmet {
+    margin-top: 17px;
+    margin-left: 48px;
+  }
+
   &__informationtable{
-    margin-top: 59px;
+    //margin-top: 59px;
     //float: right;
-    height: 489px;
+
+    //height: 478px;
     //padding-left: 55px;
     //width: 536px;
-    //margin-right: 138.5px;
+    //margin-left: 55px;
+    //margin-right: 138px;
     table {
       //margin-left: 385px;
       border-collapse: collapse;

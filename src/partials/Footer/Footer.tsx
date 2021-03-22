@@ -8,8 +8,10 @@ export const Footer = () => {
   return (
     <div className="Footer">
       <Icon className="Footer__logo" icon="logo-black" />
-      <Icon className="Footer__logokutia" icon="Group 2" />
-      <p className="Footer__kutia">DESIGNED BY KUTIA</p>
+      <div className="Footer__signature">
+        <Icon className="Footer__logokutia" icon="Group 2" />
+        <p className="Footer__kutia">DESIGNED BY KUTIA</p>
+      </div>
     </div>
   )
 }
