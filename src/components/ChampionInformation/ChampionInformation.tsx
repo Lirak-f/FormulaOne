@@ -22,11 +22,11 @@ export const ChampionInformation = () => {
   }, [])
   return (
     <div className="ChampionInformation">
-      <p className="ChampionInformation_year">2011</p>
-      <p className="ChampionInformation_champion">Champion</p>
-      <Table data={data} className="ChampionInformation_table" />
+      <p className="ChampionInformation__year">2011</p>
+      <p className="ChampionInformation__champion">Champion</p>
+      <Table data={data} className="ChampionInformation__table" />
       <Link to="/drivers/alonso">
-        <Button className="ChampionInformation_button" />
+        <Button className="ChampionInformation__button" />
       </Link>
     </div>
   )

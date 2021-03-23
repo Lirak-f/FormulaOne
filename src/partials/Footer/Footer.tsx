@@ -9,8 +9,8 @@ export const Footer = () => {
     <div className="Footer">
       <Icon className="Footer__logo" icon="logo-black" />
       <div className="Footer__signature">
-        <Icon className="Footer__logokutia" icon="Group 2" />
-        <p className="Footer__kutia">DESIGNED BY KUTIA</p>
+        <Icon className="Footer_logokutia" icon="Group 2" />
+        <p className="Footer_kutia">DESIGNED BY KUTIA</p>
       </div>
     </div>
   )

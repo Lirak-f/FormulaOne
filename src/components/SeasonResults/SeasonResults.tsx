@@ -34,7 +34,7 @@ export const SeasonResults = () => {
   }, [])
   return (
     <div className="SeasonResults">
-      <p className="SeasonResults_winners">Winners</p>
+      <p className="SeasonResults__winners">Winners</p>
       <Table className="SeasonResults__table" button data={data} />
     </div>
   )
