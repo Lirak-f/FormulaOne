@@ -1,25 +1,47 @@
 import React, { useEffect, useState } from "react"
-import { Link } from "react-router-dom"
+
 //components
 import { Button } from "../shared/Button/Button"
 import { Table } from "../shared/Table/Table"
+import { Link } from "react-router-dom"
 //styles
 import "./ChampionInformation.scss"
+//API
+import * as API from "../../api/Seasons"
 
-export const ChampionInformation = () => {
-  const [data, setData] = useState<any>([
-    { Name: "Abc", Age: 15, Location: "Bangalore" }
-  ])
+interface Props {
+  param: string
+}
+
+export const ChampionInformation = (props: Props) => {
+  // console.log(props.param)
   useEffect(() => {
-    setData([
-      {
-        Name: "Lewis Hamilton",
-        Nationality: "British",
-        Team: "Bangalore",
-        Points: "205"
-      }
-    ])
-  }, [])
+    getChampion()
+  }, [props.param])
+  async function getChampion() {
+    try {
+      const res = await API.getChampion(props.param)
+      const results = res.MRData.RaceTable.Races[0].Results[0]
+      // console.log(results)
+      setData([
+        {
+          Name: results.Driver.givenName + " " + results.Driver.familyName,
+          Nationality: results.Constructor.nationality,
+          Team: results.Constructor.name,
+          Points: results.points
+        }
+      ])
+    } catch (e) {}
+  }
+  const [data, setData] = useState([
+    {
+      Name: "",
+      Nationality: "",
+      Team: "",
+      Points: ""
+    }
+  ])
+  // console.log(data)
   return (
     <div className="ChampionInformation">
       <p className="ChampionInformation__year">2011</p>

@@ -6,9 +6,5 @@ import "./Home.scss"
 import { SeasonInformation } from "../SeasonInformation/SeasonInformation"
 
 export const Home = () => {
-  return (
-    <div className="Home">
-      <SeasonInformation />
-    </div>
-  )
+  return <div className="Home">{/*<SeasonInformation props={props} />*/}</div>
 }
