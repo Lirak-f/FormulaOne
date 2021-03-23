@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react"
 //components
-import { Button } from "../shared/Button/Button"
+import { Table } from "../shared/Table/Table"
+
 //styles
 import "./SeasonResults.scss"
-import { Table } from "../shared/Table/Table"
 
 export const SeasonResults = () => {
   const [data, setData] = useState<any>([
@@ -34,7 +34,7 @@ export const SeasonResults = () => {
   }, [])
   return (
     <div className="SeasonResults">
-      <p className="SeasonResults__winners">Winners</p>
+      <p className="SeasonResults_winners">Winners</p>
       <Table className="SeasonResults__table" button data={data} />
     </div>
   )

@@ -15,7 +15,7 @@
     margin-top: 39px;
     margin-left: 81px;
   }
-  &__f1championships {
+  &_f1championships {
     width: 104px;
     height: 12px;
     margin-left: 81px;
@@ -23,7 +23,7 @@
     font-size: 9px;
     letter-spacing: 1.35px;
   }
-  &__years {
+  &_years {
     width: 53px;
     height:20px;
     margin-top:53px;
@@ -33,32 +33,32 @@
     letter-spacing: 2.1px;
     margin-bottom: 22px;
   }
-  &__list{
+  &_list{
     &_item{
-      width: 41px;
-      height: 20px;
-      margin-bottom:27px;
-      margin-left: 142px;
+
+      padding: 13.5px 0 13.5px 143px;
       font-weight: 700;
       letter-spacing: 2.1px;
       color:#242424;
     }
   }
-  &__arrow{
+  &_arrow{
     width: 208.14px;
     height: 49px;
     background: #E6101A;
+    color: white;
     position: relative;
   }
-  &__arrow:before{
+  &_arrow:before{
     content:'';
     width: 0;
     height: 0;
+    margin-top: -13.5px;
     border-top: 25px solid white;
     border-left: 8px solid #E6101A;
     border-bottom: 25px solid white;
     display: block;
-    margin-left: 208.14px;
+    margin-left: 65px;
     background: #E6101A;
     position: absolute;
   }

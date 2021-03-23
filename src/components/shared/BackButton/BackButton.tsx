@@ -10,7 +10,7 @@ export const BackButton = (props: any) => {
   return (
     <div className={classNames}>
       <Icon className="BackButton__icon" icon="arrow" />
-      <button className="BackButton__back">Back</button>
+      <button className="BackButton_back">Back</button>
     </div>
   )
 }

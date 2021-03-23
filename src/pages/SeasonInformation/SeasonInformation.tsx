@@ -4,7 +4,6 @@ import { ChampionInformation } from "../../components/ChampionInformation/Champi
 import "./SeasonInformation.scss"
 //components
 import { SeasonResults } from "../../components/SeasonResults/SeasonResults"
-import { Table } from "../../components/shared/Table/Table"
 
 export const SeasonInformation = () => {
   return (
