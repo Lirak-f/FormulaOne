@@ -9,7 +9,7 @@ export const Button = (props: any) => {
   const classNames = cs("Button", props.className)
   return (
     <div className={classNames}>
-      <button className="Button__details">Details</button>
+      <button className="Button_details">Details</button>
       <Icon className="Button__icon" icon="arrow" />
     </div>
   )

@@ -1,5 +1,9 @@
 .SeasonInformation {
   //margin-left: 307px;
   width:  calc(100vw - 307px);
-  height: calc(100vh - 260px);
+  //height: calc(100vh - 260px);
+  display: flex;
+  flex-direction: column;
+  //justify-content: space-between;
+                height: 100%;
 }

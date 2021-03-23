@@ -3,7 +3,6 @@ import React from "react"
 //styles
 import "./SideBar.scss"
 //icons
-import logo from "../../assets/icons/logo.svg"
 import { Icon } from "../shared/Icon/Icon"
 
 export const SideBar = () => {
@@ -15,9 +14,8 @@ export const SideBar = () => {
       <ul className="SideBar__list">
         <li className="SideBar__list_item">2009</li>
         <li className="SideBar__list_item">2010</li>
-        <li className="SideBar__list_item">2011</li>
+        <li className="SideBar__list_item SideBar__arrow">2011</li>
       </ul>
-      <p></p>
     </div>
   )
 }
