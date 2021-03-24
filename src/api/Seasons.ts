@@ -29,6 +29,9 @@ export interface ChampionResponse {
   }
 }
 export const getChampion = async (season: string) =>
-  apiRequest<undefined, ChampionResponse>("get", season + "/5/results.json")
+  apiRequest<undefined, ChampionResponse>(
+    "get",
+    season + "/5/results.json?limit=3"
+  )
 export const getSeasons = async () =>
   apiRequest<undefined, SeasonsResponse>("get", "seasons.json?limit=10")

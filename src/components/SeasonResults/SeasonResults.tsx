@@ -1,42 +1,54 @@
 import React, { useEffect, useState } from "react"
 //components
 import { Table } from "../shared/Table/Table"
+import { TransformData } from "../../lib/helpers/TransformData"
 
 //styles
 import "./SeasonResults.scss"
 import * as API from "../../api/Seasons"
+
 interface Props {
   param: string
 }
-interface Data {}
+
+// interface Data {
+//   points: string
+//   Constructor: {
+//     name: string
+//     nationality: string
+//   }
+//   Driver: {
+//     givenName: string
+//     familyName: string
+//   }
+// }
+
 export const SeasonResults = (props: Props) => {
   const [data, setData] = useState([
     {
-      Name: "Lewis Hamilton",
-      Nationality: "British",
-      Team: "Bangalore",
-      Points: "205"
+      name: "",
+      points: "",
+      nationality: "",
+      team: ""
     }
   ])
+  // console.log(data)
   useEffect(() => {
     getChampion()
   }, [props.param])
+
   async function getChampion() {
     try {
       const res = await API.getChampion(props.param)
       const results = res.MRData.RaceTable.Races[0].Results
-      console.log(results)
-      // setData([
-      //   {
-      //     Name:
-      //     Nationality:
-      //     Team:
-      //     Points:
-      //   }
-      // ])
-      // setData(results)
+
+      const transformedData = TransformData(results)
+      console.log(transformedData)
+      // console.log(results)
+      setData(transformedData)
     } catch (e) {}
   }
+
   return (
     <div className="SeasonResults">
       <p className="SeasonResults__winners">Winners</p>
@@ -44,6 +56,7 @@ export const SeasonResults = (props: Props) => {
     </div>
   )
 }
+
 {
   /*<table className="SeasonResults__table">*/
 }
