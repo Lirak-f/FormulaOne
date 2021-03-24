@@ -2,12 +2,15 @@ import React from "react"
 
 //components
 import { Button } from "../../shared/Button/Button"
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 //styles
 import "./Table.scss"
 
 export const Table = (props: any) => {
   const getKeys = () => {
+    // console.log(props.data[0])
+    delete props.data[0].driverId
+    // console.log(Object.keys(props.data[0].pop()))
     return Object.keys(props.data[0])
   }
 
@@ -24,10 +27,12 @@ export const Table = (props: any) => {
   }
   const RenderRow = (props: any) => {
     return props.keys.map((key: any, index: any) => {
+      // let removed = props.data[key].splice(-1).pop()
+      // console.log(removed)
       return <td key={props.data[key]}>{props.data[key]}</td>
     })
   }
-
+  // console.log(props.param)
   const getRowsData = () => {
     let items = props.data
     let keys = getKeys()
@@ -37,9 +42,9 @@ export const Table = (props: any) => {
           <RenderRow key={index} data={row} keys={keys} />
           {props.button ? (
             <td>
-              <Link to="drivers/alonso">
+              <NavLink to={`/${props.param}/driver/${props.nav}`}>
                 <Button className="button" />
-              </Link>
+              </NavLink>
             </td>
           ) : null}
         </tr>
