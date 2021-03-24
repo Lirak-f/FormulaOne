@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 //components
 import { Table } from "../shared/Table/Table"
-import { TransformData } from "../../lib/helpers/TransformData"
+import { transformData } from "../../lib/helpers/transformData"
 
 //styles
 import "./SeasonResults.scss"
@@ -10,18 +10,6 @@ import * as API from "../../api/Seasons"
 interface Props {
   param: string
 }
-
-// interface Data {
-//   points: string
-//   Constructor: {
-//     name: string
-//     nationality: string
-//   }
-//   Driver: {
-//     givenName: string
-//     familyName: string
-//   }
-// }
 
 export const SeasonResults = (props: Props) => {
   const [data, setData] = useState([
@@ -42,8 +30,8 @@ export const SeasonResults = (props: Props) => {
       const res = await API.getChampion(props.param)
       const results = res.MRData.RaceTable.Races[0].Results
 
-      const transformedData = TransformData(results)
-      console.log(transformedData)
+      const transformedData = transformData(results)
+      // console.log(transformedData)
       // console.log(results)
       setData(transformedData)
     } catch (e) {}
