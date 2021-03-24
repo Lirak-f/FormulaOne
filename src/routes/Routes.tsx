@@ -65,6 +65,12 @@ export const AppRoutes: AppRoute[] = [
   {
     type: RouteType.PUBLIC,
     exact: true,
+    path: ":season",
+    component: SeasonInformation
+  },
+  {
+    type: RouteType.PUBLIC,
+    exact: true,
     path: "/",
     component: SeasonInformation
   },
