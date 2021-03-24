@@ -20,11 +20,11 @@ export const SeasonResults = (props: Props) => {
       team: ""
     }
   ])
+  const [nav, setNav] = useState("")
   // console.log(data)
   useEffect(() => {
     getChampion()
   }, [props.param])
-
   async function getChampion() {
     try {
       const res = await API.getChampion(props.param)
@@ -32,15 +32,25 @@ export const SeasonResults = (props: Props) => {
 
       const transformedData = transformData(results)
       // console.log(transformedData)
+      transformedData.map((navi) => {
+        return setNav(navi.driverId)
+      })
       // console.log(results)
       setData(transformedData)
     } catch (e) {}
   }
-
+  // console.log(nav)
+  // console.log(data)
   return (
     <div className="SeasonResults">
       <p className="SeasonResults__winners">Winners</p>
-      <Table className="SeasonResults__table" button data={data} />
+      <Table
+        className="SeasonResults__table"
+        nav={nav}
+        param={props.param}
+        button
+        data={data}
+      />
     </div>
   )
 }

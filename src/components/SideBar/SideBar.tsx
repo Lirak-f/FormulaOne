@@ -23,7 +23,8 @@ export const SideBar = () => {
     try {
       const res = await API.getSeasons()
       const result = res.MRData.SeasonTable.Seasons
-      // console.log(result)
+      const nav = res.MRData
+      // console.log(nav)
       setData(result)
     } catch (e) {}
   }

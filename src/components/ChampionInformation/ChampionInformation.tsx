@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react"
 //components
 import { Button } from "../shared/Button/Button"
 import { Table } from "../shared/Table/Table"
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 //styles
 import "./ChampionInformation.scss"
 //API
@@ -14,21 +14,24 @@ interface Props {
 }
 
 export const ChampionInformation = (props: Props) => {
-  // console.log(props.param)
+  // console.log(props)
   useEffect(() => {
     getChampion()
   }, [props.param])
+
   async function getChampion() {
     try {
       const res = await API.getChampion(props.param)
       const results = res.MRData.RaceTable.Races[0].Results[0]
-      // console.log(results)
+      const nav = results.Driver.driverId
+      // console.log(nav)
       setData([
         {
           Name: results.Driver.givenName + " " + results.Driver.familyName,
           Nationality: results.Constructor.nationality,
           Team: results.Constructor.name,
-          Points: results.points
+          Points: results.points,
+          driverId: results.Driver.driverId
         }
       ])
     } catch (e) {}
@@ -38,18 +41,20 @@ export const ChampionInformation = (props: Props) => {
       Name: "",
       Nationality: "",
       Team: "",
-      Points: ""
+      Points: "",
+      driverId: ""
     }
   ])
   // console.log(data)
+  // console.log(data[0].driverId)
   return (
     <div className="ChampionInformation">
       <p className="ChampionInformation__year">2011</p>
       <p className="ChampionInformation__champion">Champion</p>
       <Table data={data} className="ChampionInformation__table" />
-      <Link to="/drivers/alonso">
+      <NavLink to={`/${props.param}/driver/${data[0].driverId}`}>
         <Button className="ChampionInformation__button" />
-      </Link>
+      </NavLink>
     </div>
   )
 }

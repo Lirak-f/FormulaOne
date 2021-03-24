@@ -77,7 +77,7 @@ export const AppRoutes: AppRoute[] = [
   {
     type: RouteType.PUBLIC,
     exact: true,
-    path: "drivers/:id",
+    path: ":season/driver/:driverId",
     component: DriverDetails
   }
 ]

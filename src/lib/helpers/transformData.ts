@@ -5,6 +5,7 @@ interface Data {
     nationality: string
   }
   Driver: {
+    driverId: string
     givenName: string
     familyName: string
   }
@@ -16,7 +17,8 @@ export const transformData = (data: Data[]) => {
       name: res.Driver.givenName + " " + res.Driver.familyName,
       nationality: res.Constructor.nationality,
       team: res.Constructor.name,
-      points: res.points
+      points: res.points,
+      driverId: res.Driver.driverId
     }
   })
 
