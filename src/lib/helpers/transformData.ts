@@ -1,5 +1,3 @@
-import { useState } from "react"
-
 interface Data {
   points: string
   Constructor: {
@@ -12,7 +10,7 @@ interface Data {
   }
 }
 
-export const TransformData = (data: Data[]) => {
+export const transformData = (data: Data[]) => {
   const transformedData = data.map((res) => {
     return {
       name: res.Driver.givenName + " " + res.Driver.familyName,
@@ -22,6 +20,6 @@ export const TransformData = (data: Data[]) => {
     }
   })
 
-  console.log(transformedData)
+  // console.log(transformedData)
   return transformedData
 }
