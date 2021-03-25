@@ -3,10 +3,13 @@
 .Footer {
   //margin-left: 307px;
   width:  calc(100vw - 307px);
+  min-height: 159px;
   height: 159px;
   background-image: linear-gradient(rgba(0,0,0,0) 35%, #000000 230%);
   display: flex;
   align-items: center;
+  background-color: #EDF0F2;
+  //position: static;
   justify-content: space-between;
   //&__elements {
   //  //position: relative;
