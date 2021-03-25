@@ -2,12 +2,12 @@
   //margin-left: 307px;
   width: calc(100vw - 307px);
   ////height: calc(100vh - 192px);
-  //background-color: #EDF0F2;
-  height: 100%;
+  background-color: #EDF0F2;
+  //height: 100vh;
   display: flex;
   flex-direction: column;
 
-  overflow-y: auto;
+  //overflow-y: auto;
   &__content {
     margin-top: 59px;
     display: flex;
@@ -75,7 +75,6 @@
   &__informationtable{
     //margin-top: 59px;
     //float: right;
-
     //height: 478px;
     //padding-left: 55px;
     //width: 536px;
@@ -90,6 +89,7 @@
       padding-right: 54px !important;
     }
     td{
+
       padding-right: 56px !important;
     }
     th, td {
