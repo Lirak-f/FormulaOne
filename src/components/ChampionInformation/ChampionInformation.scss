@@ -1,6 +1,7 @@
 .ChampionInformation {
   margin: 101px 108px 0 78px;
   //position: absolute;
+  //width: 874px;
   position: relative;
   display: flex;
   height: 214px;
@@ -23,6 +24,7 @@
   &__table {
     border-collapse: collapse;
     margin: 22px 139px 200px 31px;
+    //width: 220px;
   }
   th{
     border-bottom: 1px solid #C2C8CB;
@@ -34,16 +36,20 @@
   th,td {
     padding: 14px 0 14px 0 ;
   }
+
+
+  td:nth-child(3){
+    font-weight: 400;
+  }
+
   td{
-    width: 221px;
+    //width: 221px;
     color: #000000;
     font-size: 12px;
     font-weight: bold;
   }
-  td:nth-child(3){
 
-    font-weight: 400;
-  }
+
   td:nth-child(4) {
     letter-spacing: 1.8px;
   }
@@ -54,4 +60,105 @@
     right: 31px;
   }
 
+}
+@media only screen and (max-width: 800px) {
+  .ChampionInformation {
+    margin: 101px 0 0 2.5px;
+    //position: absolute;
+    position: relative;
+    display: flex;
+    height: 500px;
+    width: calc(100vw - 140px);
+    background-color: #FBFBFC;
+    //opacity: 75%;
+    border-radius: 26px;
+    flex-direction: column;
+
+    &__year {
+      font-size: 14px;
+      font-weight: bold;
+      margin: 35px 0 0 31px;
+    }
+    &__champion{
+      font-size: 20px;
+      font-weight: bold;
+      margin: 0 0 0 31px;
+      color:#E6101A;
+    }
+    &__table {
+      border-collapse: collapse;
+      margin: 22px 139px 200px 0;
+      width: 230px;
+
+    }
+    th{
+      border-bottom: 1px solid #C2C8CB;
+      font-size:8px;
+      font-weight: bold;
+      color:#89959B;
+      letter-spacing: 1.5px;
+    }
+    th,td {
+      display: block;
+      width: 230px !important;
+      padding: 14px 0 14px 0 ;
+      text-align: center;
+    }
+    td{
+      //width: 150px;
+      color: #000000;
+      font-size: 10px;
+      font-weight: bold;
+    }
+    //th:nth-child(1) {
+    //  display: inline-block;
+    //  width:230px;
+    //
+    //}
+    //td:nth-child(1) {
+    //  display: inline-block;
+    //  width:230px;
+    //
+    //}
+    //th:nth-child(2) {
+    //  display: inline-block;
+    //  width:174px;
+    //
+    //}
+    //td:nth-child(2) {
+    //  display: inline-block;
+    //  width:174px;
+    //
+    //}
+    //th:nth-child(3) {
+    //  display: inline-block;
+    //  width:155px;
+    //
+    //}
+    //td:nth-child(3){
+    //  display: inline-block;
+    //  width:155px;
+    //  font-weight: 400;
+    //}
+    //th:nth-child(4) {
+    //  display: inline-block;
+    //  width:154px;
+    //
+    //}
+    //td:nth-child(4){
+    //  display: inline-block;
+    //  width:154px;
+    //
+    //}
+    //td:nth-child(4) {
+    //  letter-spacing: 1.8px;
+    //}
+    &__button {
+      position: absolute !important;
+      top:440px;
+      background-color: white;
+      right:60px;
+    }
+
+  }
 }

@@ -1,6 +1,7 @@
 a{
   color:#242424;
 }
+
 .SideBar {
   height: 100%;
   width: 307px;
@@ -67,4 +68,74 @@ a{
     position: absolute;
   }
 
+}
+@media only screen and (max-width: 800px) {
+  .SideBar {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    //justify-content: center;
+
+    &__logo {
+      width: 106px !important;
+      height: 26px !important;
+
+      margin-top: 39px;
+      margin-left: 25px;
+    }
+
+    &__f1championships {
+      width: 104px;
+      height: 12px;
+      margin-left: 25px;
+      margin-top: 5.8px;
+      font-size: 9px;
+      letter-spacing: 1.35px;
+    }
+
+    &__years {
+      width: 53px;
+      height: 20px;
+      margin-top: 53px;
+      margin-left: 40px;
+      color: #C2C8CB;
+      font-weight: 700;
+      letter-spacing: 2.1px;
+      margin-bottom: 22px;
+    }
+
+    &__list {
+      &_item {
+        //position: absolute;
+        padding: 12.5px 0 12.5px 45px;
+        font-weight: 700;
+        letter-spacing: 2.1px;
+        //color:black;
+      }
+    }
+
+    &__arrow {
+      width: 110px;
+      //height: 49px;
+      background: #E6101A;
+      color: white !important;
+      display: block;
+      margin-right: 100px;
+      //position: absolute;
+    }
+
+    &__arrow:before {
+      content: '';
+      width: 0;
+      height: 0;
+      //margin-top: -13.5px;
+      border-top: 25px solid white;
+      border-left: 8px solid #E6101A;
+      border-bottom: 25px solid white;
+      display: block;
+      margin-left: 110px;
+      background: #E6101A;
+      position: absolute;
+    }
+  }
 }
