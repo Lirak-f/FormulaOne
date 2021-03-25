@@ -1,4 +1,6 @@
-
+a{
+  color:#242424;
+}
 .SideBar {
   height: 100%;
   width: 307px;
@@ -39,14 +41,14 @@
       padding: 13.5px 0 13.5px 143px;
       font-weight: 700;
       letter-spacing: 2.1px;
-      color:#242424;
+      //color:black;
     }
   }
   &__arrow{
-    //width: 208.14px;
+    width: 208.14px;
     //height: 49px;
     background: #E6101A;
-    color: white;
+    color: white !important;
     display: block;
     margin-right: 100px;
     //position: absolute;
@@ -60,8 +62,9 @@
     border-left: 8px solid #E6101A;
     border-bottom: 25px solid white;
     display: block;
-    margin-left: 208px;
+    margin-left: 206px;
     background: #E6101A;
     position: absolute;
   }
+
 }
