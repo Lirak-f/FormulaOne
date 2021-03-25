@@ -23,9 +23,7 @@ interface Props {
 export const DriverDetails = (props: Props) => {
   const season = props.match.params.season
   const param = props.match.params.driverId
-  // console.log(param)
   useEffect(() => {
-    // getDriverDetails()
     getChampion()
   }, [])
   const [data, setData] = useState({
@@ -33,26 +31,14 @@ export const DriverDetails = (props: Props) => {
     dateOfBirth: "",
     permanentNumber: ""
   })
-  // async function getDriverDetails() {
-  //   try {
-  //     const res = await API.getDriverDetails(param)
-  //     const results = res.MRData.DriverTable.Drivers[0]
-  //     // console.log(res)
-  //     setData({
-  //       name: results.givenName + " " + results.familyName,
-  //       dateOfBirth: results.dateOfBirth,
-  //       permanentNumber: results.permanentNumber
-  //     })
-  //   } catch (e) {}
-  // }
 
   async function getChampion() {
     try {
       const res = await API.getChampion(season)
-      console.log(res)
+      // console.log(res)
       const results = res.MRData.RaceTable.Races[0].Results[0]
       // const nav = results.Driver.driverId
-      console.log(results)
+      // console.log(results)
       setChamp([
         {
           Name: results.Driver.givenName + " " + results.Driver.familyName,
@@ -79,7 +65,7 @@ export const DriverDetails = (props: Props) => {
       dateOfBirth: ""
     }
   ])
-  console.log(champ)
+  // console.log(champ)
   return (
     <div className="DriverDetails">
       <Link to="/">
