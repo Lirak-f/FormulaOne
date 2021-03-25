@@ -23,6 +23,7 @@ interface Props {
 export const DriverDetails = (props: Props) => {
   const season = props.match.params.season
   const param = props.match.params.driverId
+
   useEffect(() => {
     getChampion()
   }, [])
@@ -68,7 +69,7 @@ export const DriverDetails = (props: Props) => {
   // console.log(champ)
   return (
     <div className="DriverDetails">
-      <Link to="/">
+      <Link to={`/${props.match.params.season}`}>
         <BackButton className="DriverDetails__backbutton" />
       </Link>
       <div className="DriverDetails__content">
