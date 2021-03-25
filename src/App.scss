@@ -15,3 +15,22 @@
     justify-content: space-between;
   }
 }
+@media only screen and (max-width: 800px) {
+  .App {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    //height: 100vh;
+    background-color: #EDF0F2;
+    position: relative;
+
+    &__content{
+      width: calc(100vw - 150px);
+      margin-left: 150px;
+      display: flex;
+      height: 100vh;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+}

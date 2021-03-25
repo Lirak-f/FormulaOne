@@ -61,3 +61,70 @@
   }
 
 }
+@media only screen and (max-width: 800px) {
+  .SeasonResults {
+    //opacity: 75%;
+    border-radius: 26px;
+    display: flex;
+    flex-direction: column;
+    margin: 58px 108px 0px 0;
+
+    &__winners {
+      width: 80px;
+      height: 28px;
+      margin: 0px 0 0 31px;
+      font-size: 20px;
+      color: #E6101A;
+      font-weight: normal;
+
+    }
+    &__table {
+      border-collapse: collapse;
+      margin: 16px 30px 0 0;
+
+    }
+    th{
+      border-bottom: 1px solid #C2C8CB;
+      font-size:8px;
+      padding-top: 0 !important;
+      font-weight: bold;
+      color:#89959B;
+
+      letter-spacing: 1.5px;
+    }
+    th,td {
+      padding: 11px 0px 11px 0 ;
+      text-align: center;
+    }
+    td{
+      width: 50px;
+      color: #000000;
+      font-size: 8px;
+      font-weight: bold;
+    }
+    td:nth-child(3){
+      font-weight: 400;
+    }
+    td:nth-child(4) {
+      letter-spacing: 1.8px;
+    }
+    td:nth-child(5) {
+      //padding: 11px 0 11px 50px;
+      width:86px;
+    }
+    tbody {
+      padding-top: 3px;
+    }
+    &__button {
+      background-color: white;
+      width: 96px;
+      height: 28px;
+      right:0;
+      .Button__icon{
+        width: 15px !important;
+        height: 15px !important;
+      }
+    }
+
+  }
+}

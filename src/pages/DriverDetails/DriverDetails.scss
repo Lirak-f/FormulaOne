@@ -109,3 +109,112 @@
     }
   }
 }
+@media only screen and (max-width: 800px) {
+  .DriverDetails {
+    //margin-left: 307px;
+    width: 100%;
+    ////height: calc(100vh - 192px);
+    //background-color: #EDF0F2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    overflow-y: auto;
+    &__content {
+      margin-top: 59px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      //margin-right: 138px;
+    }
+    &__backbutton {
+      margin: 33px 0 0 5px;
+    }
+
+    &_year {
+      //margin: 59px 0 0 109px;
+      font-weight: bold;
+      font-size: 14px;
+      letter-spacing: 2.1px;
+      margin-bottom: 0;
+    }
+
+    &_title {
+      //margin-left: 109px;
+      margin-bottom: 0;
+      font-size: 20px;
+      font-weight: bold;
+      color: #E6101A;
+    }
+
+    &_driverphoto {
+      width: 150px;
+      //margin: 22px 0 0 109px;
+      margin-top: 22px;
+    }
+
+    &__information {
+      display: flex;
+      flex-direction: row;
+      margin-top: 17px;
+      margin-bottom: 0;
+      align-items: center;
+      width: 50px;
+    }
+
+    &_number {
+      font-size: 10px;
+      color: #C2C8CB;
+      margin: 0;
+    }
+
+    &_name {
+      font-size: 10px;
+      font-weight: bold;
+      margin: 0 10px 0 10px;
+    }
+
+    &_helmet {
+      margin-top: 17px;
+      width: 50px;
+      //margin-left: 48px;
+    }
+
+    &__informationtable{
+      //margin-top: 59px;
+      //float: right;
+
+      //height: 478px;
+      //padding-left: 55px;
+      //width: 536px;
+      //margin-left: 55px;
+      //margin-right: 138px;
+      table {
+        //margin-left: 385px;
+        border-collapse: collapse;
+        //width: 536px;
+      }
+      th {
+        padding-right: 0 !important;
+      }
+      td{
+        //padding-right: 56px !important;
+      }
+      th, td {
+        padding: 0;
+        font-size: 10px;
+        text-align: left;
+        border-bottom: 1px solid #C2C8CB;
+
+      }
+      tr:nth-child(1){
+        th,td{
+          padding-top: 0;
+        }
+      }
+      td {
+        font-weight: bold;
+      }
+    }
+  }
+}
