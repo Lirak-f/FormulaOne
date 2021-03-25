@@ -17,18 +17,18 @@ export const SideBar = () => {
 
   useEffect(() => {
     CheckAPI()
+    // setSelected()
   }, [])
-
+  // if()
   const CheckAPI = async () => {
     try {
       const res = await API.getSeasons()
       const result = res.MRData.SeasonTable.Seasons
-      const nav = res.MRData
+      // const nav = res.MRData
       // console.log(nav)
       setData(result)
     } catch (e) {}
   }
-
   return (
     <div className="SideBar">
       <Icon className="SideBar__logo" icon="logo" />
@@ -41,6 +41,7 @@ export const SideBar = () => {
             activeClassName={"SideBar__arrow"}
             to={`/${season.season}`}
           >
+            {/*{console.log(`/${season.season}`)}*/}
             <li className="SideBar__list_item">{season.season}</li>
           </NavLink>
         ))}
