@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-
+import { useHistory } from "react-router-dom"
 //API
 import * as API from "../../api/Api"
 //styles
@@ -13,24 +13,25 @@ interface SeasonsResult {
 }
 
 export const SideBar = () => {
-  const [data, setData] = useState<SeasonsResult[]>([])
+  let history = useHistory()
+  console.log(history.location.pathname)
 
+  const [data, setData] = useState<SeasonsResult[]>([])
   useEffect(() => {
     CheckAPI()
-    // setSelected()
   }, [])
-  // if()
+
   const CheckAPI = async () => {
     try {
       const res = await API.getSeasons()
       const result = res.MRData.SeasonTable.Seasons
-      // const nav = res.MRData
-      // console.log(nav)
       setData(result)
     } catch (e) {}
   }
+
   return (
     <div className="SideBar">
+      {history.location.pathname === "/" ? history.push("2009") : ""}
       <Icon className="SideBar__logo" icon="logo" />
       <p className="SideBar__f1championships">F1 CHAMPIONSHIPS</p>
       <p className="SideBar__years">YEARS</p>
