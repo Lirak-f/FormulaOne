@@ -14,7 +14,7 @@ interface SeasonsResult {
 
 export const SideBar = () => {
   let history = useHistory()
-  console.log(history.location.pathname)
+  // console.log(history.location.pathname)
 
   const [data, setData] = useState<SeasonsResult[]>([])
   useEffect(() => {
@@ -31,7 +31,7 @@ export const SideBar = () => {
 
   return (
     <div className="SideBar">
-      {history.location.pathname === "/" ? history.push("2009") : ""}
+      {history.location.pathname === "/" ? history.push(data[0]?.season) : ""}
       <Icon className="SideBar__logo" icon="logo" />
       <p className="SideBar__f1championships">F1 CHAMPIONSHIPS</p>
       <p className="SideBar__years">YEARS</p>
