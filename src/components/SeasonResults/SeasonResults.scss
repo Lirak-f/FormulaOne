@@ -31,7 +31,7 @@
     padding: 11px 0px 11px 0 ;
   }
   td{
-    width: 221px;
+    //width: 221px;
     color: #000000;
     font-size: 12px;
     font-weight: bold;
@@ -66,19 +66,21 @@
     //opacity: 75%;
     border-radius: 26px;
     display: flex;
+    width: 280px;
     flex-direction: column;
-    margin: 58px 108px 0px 0;
+    margin: 0;
 
     &__winners {
       width: 80px;
       height: 28px;
-      margin: 0px 0 0 31px;
+      margin: 0px 0 0 80px;
       font-size: 20px;
       color: #E6101A;
       font-weight: normal;
 
     }
     &__table {
+
       border-collapse: collapse;
       margin: 16px 30px 0 0;
 
@@ -89,17 +91,18 @@
       padding-top: 0 !important;
       font-weight: bold;
       color:#89959B;
-
       letter-spacing: 1.5px;
     }
     th,td {
+      display: block;
       padding: 11px 0px 11px 0 ;
       text-align: center;
     }
     td{
-      width: 50px;
+      //width: 50px;
       color: #000000;
       font-size: 8px;
+      padding-left: 30px;
       font-weight: bold;
     }
     td:nth-child(3){
@@ -111,6 +114,10 @@
     td:nth-child(5) {
       //padding: 11px 0 11px 50px;
       width:86px;
+      padding-left: 80px;
+    }
+    th:nth-child(5){
+      display: none;
     }
     tbody {
       padding-top: 3px;
@@ -119,6 +126,8 @@
       background-color: white;
       width: 96px;
       height: 28px;
+      padding-left:100px ;
+
       right:0;
       .Button__icon{
         width: 15px !important;
