@@ -36,7 +36,9 @@
   th,td {
     padding: 14px 0 14px 0 ;
   }
-
+  th:nth-child(1){
+    width: 221px;
+  }
 
   td:nth-child(3){
     font-weight: 400;
@@ -101,6 +103,9 @@
       font-weight: bold;
       color:#89959B;
       letter-spacing: 1.5px;
+    }
+    th:nth-child(1){
+      width: auto;
     }
     th,td {
       display: block;

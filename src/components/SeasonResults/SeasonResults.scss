@@ -17,7 +17,7 @@
   &__table {
     border-collapse: collapse;
     margin: 16px 30px 0 31px;
-
+    //table-layout: fixed;
   }
   th{
     border-bottom: 1px solid #C2C8CB;
@@ -29,6 +29,9 @@
   }
   th,td {
     padding: 11px 0px 11px 0 ;
+  }
+  th:nth-child(1){
+    width: 221px;
   }
   td{
     //width: 221px;
@@ -92,6 +95,10 @@
       font-weight: bold;
       color:#89959B;
       letter-spacing: 1.5px;
+
+    }
+    th:nth-child(1){
+      width: auto;
     }
     th,td {
       display: block;
