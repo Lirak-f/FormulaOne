@@ -39,6 +39,7 @@ export const SideBar = () => {
         {data?.map((season, index: number) => (
           <NavLink
             key={index}
+            style={{ textDecoration: "none" }}
             activeClassName={"SideBar__arrow"}
             to={`/${season.season}`}
           >
