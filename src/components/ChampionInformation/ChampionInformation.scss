@@ -61,18 +61,20 @@
   }
 
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   .ChampionInformation {
-    margin: 101px 0 0 2.5px;
+    margin: 50px 20px 0 20px;
     //position: absolute;
     position: relative;
     display: flex;
     height: 500px;
-    width: calc(100vw - 140px);
+    display: flex;
+    //width: calc(100vw - 140px);
     background-color: #FBFBFC;
     //opacity: 75%;
     border-radius: 26px;
     flex-direction: column;
+    //align-items: center;
 
     &__year {
       font-size: 14px;
@@ -87,9 +89,11 @@
     }
     &__table {
       border-collapse: collapse;
-      margin: 22px 139px 200px 0;
-      width: 230px;
-
+      margin-left: 5px;
+      margin-right: 5px;
+      //margin: 22px 20px 200px 0;
+      //width: 230px;
+      //width: 100%;
     }
     th{
       border-bottom: 1px solid #C2C8CB;
@@ -100,7 +104,7 @@
     }
     th,td {
       display: block;
-      width: 230px !important;
+      //width: 230px !important;
       padding: 14px 0 14px 0 ;
       text-align: center;
     }
@@ -154,10 +158,14 @@
     //  letter-spacing: 1.8px;
     //}
     &__button {
-      position: absolute !important;
-      top:440px;
+      //position: absolute !important;
+      //top:440px;
+      //margin:310px 112px 0 0;
+      right:20px;
+      top:450px;
       background-color: white;
-      right:60px;
+      //right:60px;
+      //left:60px;
     }
 
   }
